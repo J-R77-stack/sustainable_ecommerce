@@ -38,32 +38,74 @@
     <title>Sustainable {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
+    <!-- Header and Navbar -->
     <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="{% url 'home' %}">
         <img src="{% static 'assets/images/tree.png' %}" alt="" width="50" height="50" class="d-inline-block align-text-centre">
-        <strong>SUSTAINABLE</strong> LIFE
+        MY SUSTAINABLE LIFE
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>  
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">All Products</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              All Products
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">By Price</a>
+              <a class="dropdown-item" href="#">By Rating</a>
+              <a class="dropdown-item" href="#">By Category</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">All Products</a>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Clothing</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Clothing
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Jeans</a>
+              <a class="dropdown-item" href="#">Trainers</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">All Clothes</a>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Groceries</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Homeware
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Cooking & Dining</a>
+              <a class="dropdown-item" href="#">Home Accessories</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">All Homeware</a>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Homeware</a>
-          </li> 
-          <li class="nav-item">
-           <a class="nav-link" href="#">Deals</a>
-          </li> 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Groceries
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Fresh & Chilled</a>
+              <a class="dropdown-item" href="#">Food Cupboard</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">All Groceries</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Deals
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Sales</a>
+              <a class="dropdown-item" href="#">Clearance</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">All Deals</a>
+            </div>
+          </li>
         </ul>
         <div>
           <ul class="list-inline list-unstyled text-center text-lg-right my-0">
@@ -113,8 +155,6 @@
     </nav>
   </header>
   </body>
-    
-
     {% if messages %}
         <div class="message-container"></div>
     {% endif %}
