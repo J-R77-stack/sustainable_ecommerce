@@ -5,11 +5,40 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col">
-            {{ products }}
+        <div class="col text-center mt-2">
+            <h1 class="logo-font">Products</h1>
+            
         </div>
     </div>
+    <div class="row mt-2 mr-2 ml-2">
+        {% for product in products %}
+        <div class="card-deck">
+            <div class="card img-fluid">
+                {% if product.image %}
+                <a href="">
+              <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                </a>
+                {% else %}
+                <a href="">
+                    <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top" alt="{{ product.name }}">
+                </a>
+                {% endif %}
+              <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">£{{ product.price }}</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">{{ product.rating }}</small>
+              </div>
+            </div>
+            
+                        </div>
+                        {% endfor %}       
+          </div>
+          
+    </div>
+
 </div>
 {% endblock %} 
