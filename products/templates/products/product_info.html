@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid">
+    <div class="card mt-2">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            {% if product.image %}
+            <a href="{{ product.image.url }}" target="_blank">
+            <img src="{{ product.image.url }}" class="card-img" alt="{{ product.name }}">
+            </a>
+            {% else %}
+            <a href="">
+                <img src="{{ MEDIA_URL }}noimage.png" class="card-img" alt="{{ product.name }}">
+            </a>
+            {% endif %}
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h4 class="card-title">{{ product.name }}</h4>
+              <p class="card-text">{{ product.description }}</p>
+              <h5 class="card-title">£{{ product.price }}</h5> 
+              <h5 class="card-title"><small class="text-muted"><i class="fas fa-grin-stars"></i> {{ product.rating }} / 5 </small></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}

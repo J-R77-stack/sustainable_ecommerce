@@ -13,7 +13,7 @@ def all_products (request):
     return render(request, 'products/products.html', context)
 
 
-def product_info (request):
+def product_info (request, product_id):
     """ A view to show the individual product information"""
 
     product = get_object_or_404(Product, pk=product_id)
