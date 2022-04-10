@@ -67,10 +67,10 @@
               Clothing
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Jeans</a>
-              <a class="dropdown-item" href="#">Trainers</a>
+              <a class="dropdown-item" href="{% url 'products' %}?category=jeans">Jeans</a>
+              <a class="dropdown-item" href="{% url 'products' %}?category=trainers">Trainers</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">All Clothes</a>
+              <a class="dropdown-item" href="{% url 'products' %}?category=jeans,trainers">All Clothes</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -78,10 +78,10 @@
               Homeware
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Cooking & Dining</a>
-              <a class="dropdown-item" href="#">Home Accessories</a>
+              <a class="dropdown-item" href="{% url 'products' %}?category=cooking_dining">Cooking & Dining</a>
+              <a class="dropdown-item" href="{% url 'products' %}?category=home_accessories">Home Accessories</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">All Homeware</a>
+              <a class="dropdown-item" href="{% url 'products' %}?category=cooking_dining,home_accessories ">All Homeware</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -89,10 +89,10 @@
               Groceries
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Fresh & Chilled</a>
-              <a class="dropdown-item" href="#">Food Cupboard</a>
+              <a class="dropdown-item" href="{% url 'products' %}?category=fresh_chilled">Fresh & Chilled</a>
+              <a class="dropdown-item" href="{% url 'products' %}?category=food_cupboard">Food Cupboard</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">All Groceries</a>
+              <a class="dropdown-item" href="{% url 'products' %}?category=fresh_chilled,food_cupboard">All Groceries</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -100,10 +100,10 @@
               Deals
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Sales</a>
-              <a class="dropdown-item" href="#">Clearance</a>
+              <a class="dropdown-item" href="{% url 'products' %}?category=sales">Sales</a>
+              <a class="dropdown-item" href="{% url 'products' %}?category=clearance">Clearance</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">All Deals</a>
+              <a class="dropdown-item" href="{% url 'products' %}?category=sales,clearance">All Deals</a>
             </div>
           </li>
         </ul>
