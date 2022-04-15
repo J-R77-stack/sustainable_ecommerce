@@ -8,9 +8,15 @@
 
     <div class="row">
         <div class="col text-center mt-2">
-            <h1 class="logo-font">Products</h1>          
+            <h1 class="logo-font">Products</h1>  
+            {% for c in current_categories %}
+                    <a class="badge badge-dark" href="{% url 'products' %}?category={{ c.name }}">
+                        <h5>{{ c.friendly_name }}</h5>
+                    </a>
+            {% endfor %}      
         </div>
     </div>
+    <hr class="w-50 mb-1">
     <div class="row ml-3 mr-3">
       {% for product in products %}
           <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-2">
@@ -28,6 +34,10 @@
                   <div class="card-body">
                     <h4 class="card-title">{{ product.name }}</h4>
                     <h5 class="card-title">£{{ product.price }} <small><i class="fas fa-grin-stars ml-5"></i> {{ product.rating }} / 5 </small></h5> 
+                    {% if product.category %}
+                    <h6><a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                      <i class="fas fa-barcode"></i> {{ product.category.friendly_name }}</a></h6>                  
+                    {% endif %}
                     <a href="{% url 'product_info' product.id %}" class="btn btn-success">Buy Me Now</a>
                   </div>
                 </div>
