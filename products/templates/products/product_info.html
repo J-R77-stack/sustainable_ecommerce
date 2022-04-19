@@ -31,8 +31,8 @@
             <hr>
             <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
               {% csrf_token %}
-              <!-- <div class="form-row"> -->
-                <!-- {% with product.available_sizes as y %}
+              <div class="form-row"> 
+                {% with product.available_sizes as y %}
                 {% if y %}
                     <div class="col-12">
                         <p class="ml-4"><strong>Size:</strong></p>
@@ -45,8 +45,8 @@
                         </select>
                     </div>
                 {% endif %}
-                {% endwith %} -->
-                <!-- {% with product.trainer_sizes as t %}
+                {% endwith %} 
+                {% with product.trainer_sizes as t %}
                 {% if t %}
                     <div class="col-12">
                         <p class="ml-4"><strong>Size:</strong></p>
@@ -59,7 +59,7 @@
                         </select>
                     </div>
                 {% endif %}
-                {% endwith %} -->
+                {% endwith %}
               <div class="form-row">
                   <div class="col-12">
                       <p class="ml-4"><strong>Quantity:</strong></p>
