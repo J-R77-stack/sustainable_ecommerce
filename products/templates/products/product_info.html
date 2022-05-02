@@ -65,7 +65,14 @@
                       <p class="ml-4"><strong>Quantity:</strong></p>
                       <div class="form-group w-25 ml-3">
                           <div class="input-group">
-                              <input class="form-control qty_input ml-1" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                            <div class="input-group-prepend" data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                              </div>
+                              <input class="form-control qty_input ml-1" type="number" 
+                              name="quantity" value="1" min="1" max="99" 
+                              data-item_id="{{ product.id }}" 
+                              id="id_qty_{{ product.id }}">
+                              <div class="input-group-append" data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                            </div>
                           </div>
                       </div>
                   </div>
