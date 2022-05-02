@@ -31,7 +31,7 @@
                                   <img class="img-fluid" src="{{ item.product.image.url }}" alt="{{ product.name }}"></td>
                               <td>
                                   <h6>{{ item.product.name }}</h6>
-                                  <p class="my-0"><strong>Size: </strong>{% if item.product.available_sizes or item.product.trainer_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                                  <p class="my-0 mb-2"><strong>Size: </strong>{% if item.product.available_sizes or item.product.trainer_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                                   <p class="text-muted small">SKU: {{ item.product.sku|upper }}</p>
                               </td>
                               <td>
