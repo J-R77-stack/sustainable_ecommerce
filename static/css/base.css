@@ -71,3 +71,11 @@ body {
 .toast-capper {
     height: 10px;
 }
+
+/* ------------------------------- shopping bag toast */
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
