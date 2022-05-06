@@ -54,3 +54,20 @@ body {
   #myBtn:hover {
     background-color: black;
   }
+
+  /* ------------------------------- bootstrap toasts */
+
+.message-container {
+    position: fixed;
+    top: 70px;
+    right: 40px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 10px;
+}
