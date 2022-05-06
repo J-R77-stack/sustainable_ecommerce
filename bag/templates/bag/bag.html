@@ -57,8 +57,8 @@
                                     </div>
                                 </form>   
                                 <div class="btn-group btn-group-sm " role="group" aria-label="Basic example">
-                                   <a><button type="button" class="btn btn-info">Update</button></a>
-                                    <a><button type="button" class="btn btn-warning">Remove</button></a>
+                                   <a><button type="button" class="btn btn-info update-link">Update</button></a>
+                                    <a><button type="button" class="btn btn-danger remove-item" id="remove_{{ product.id }}" data-size="{{ item.size }}">Remove</button></a>
                                   </div> 
                               </td>
                               <td>
@@ -108,4 +108,30 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<!-- Javascript taken from boutique Ado walkthrough project by code institute -->
+<script type="text/javascript">
+    // Update quantity on click
+    $('.update-link').click(function(e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    })
+
+    // Remove item and reload on click
+    $('.remove-item').click(function(e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var size = $(this).data('size');
+        var url = `/bag/remove/${itemId}`;
+        var data = {'csrfmiddlewaretoken': csrfToken, 'size': size};
+
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    })
+</script>
 {% endblock %}
