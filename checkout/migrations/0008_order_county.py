@@ -13,6 +13,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='order',
             name='county',
-            field=models.CharField(blank=True, max_length=80, null=True),
+            field=models.CharField(blank=True, max_length=200, null=True),
         ),
     ]
