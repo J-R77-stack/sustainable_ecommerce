@@ -28,7 +28,12 @@
                         {% for item in bag_items %} 
                             <tr>
                               <td class="w-25">
-                                  <img class="img-fluid" src="{{ item.product.image.url }}" alt="{{ product.name }}"></td>
+                                {% if item.product.image %}
+                                <img class="img-fluid" src="{{ item.product.image.url }}" alt="{{ item.product.name }}"> 
+                                {% else %}
+                                <img class="img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                                {% endif %}
+                              </td>
                               <td>
                                   <h6>{{ item.product.name }}</h6>
                                   <p class="my-0 mb-2"><strong>Size: </strong>{% if item.product.available_sizes or item.product.trainer_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
