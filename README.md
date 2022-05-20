@@ -33,15 +33,33 @@ This project is a fictional e-commerce Website for a sustainable food and clothi
 
 # UX
   ## User stories
-  ### Site User Stories
-  1. 
-  2. 
-  3. 
-  4. 
-  5. 
-  6. 
-  ### Administration User Stories
-  1. 
+  ### Viewing and Navigation
+  1. As an Online shopper I want to be able to view a list of products so that I can find and choose some to buy
+  2. As an Online Shopper I want to be able to look at individual item details so that I can see the price, description, rating, image and sizing of each item
+  3. As an Online Shopper I want to be able to see deals and special offers so that I can save money on items i want
+  4. As a Online Shopper I want to be able to see the total of my items so that I can not spend more money than I can afford
+  ### Registration and User Accounts
+  5. As a Site User I want to be able to sign up for an account so that I can view my profile and account information
+  6. As a Site User I want to be able to log in and out so that I can access my account info
+  7. As a Site User I want to be able to recover my password if I forget it so that I can continue to get access to my account
+  8. As a Site User I want to be able to have an email confirmation sent after registering for an account so that I can see that my account registration was successful
+  9. As a Site User I want to be able to have my own personal user profile so that I can access my recent orders, order history and save my payment info
+  ### Sorting and Searching
+  10. As an Online Shopper I want to be able to sort through a list of items so that I can find the best rated, priced and suitable items for me
+  11. As an Online Shopper I want to be able to sort a specific type of item so that I can find the best priced and rated in a particular category and also sort that category by name
+  12. As an Online Shopper I want to be able to sort through multiple types of products at the same time so that I can find the best rated and priced items across simultaneous categories for example food or clothing
+  13. As an Online Shopper I want to be able to look for a product by its description or name so that I can find a particular item that I want to buy
+  14. As an Online User I want to be able to see the products I've searched for and the number of results so that I can see if the item I want is available to buy
+  ### Purchasing and Checkout
+  15. As an Online Shopper I want to be able to be-able to select a size and/or quantity of product so that I can make sure I don't accidentally choose the wrong item, quantity or size 
+  16. As an Online Shopper I want to be able to view my bag so that I can see the total cost and the items I will receive
+  17. As an Online Shopper I want to be able to change the quantity of items in my bag so that I can make changes to my purchase with ease
+  18. As an Online Shopper I want to be able to Know that my payment info is safe and secure so that I can Feel confident in providing it for an online purchase
+  19. As an Online Shopper I want to be able to View my order confirmation after checkout so that I can Make sure I haven't made any mistakes
+  20. As an Online Shopper I want to be able to Receive an email confirmation after checkout so that I can See what I've purchased and keep a record
+  ### Admin and Online Shop Management
+  21. As an Online Shop Owner I want to be able to Add a product so that I can add new items to my shop
+  22. As an Online Shop Owner I want to be able to Edit and update products so that I can Change the product descriptions, prices, images and criteria
 
   ## Design
    There are links and a Nav bar provided to connect to other parts of the site. Each page is fully responsive.
