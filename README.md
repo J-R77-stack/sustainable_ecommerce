@@ -1,4 +1,5 @@
-# Councelling Appointment Booking System for Mike Wilkins Councellor
+# Sustainable.com 
+## An E-commerce Online Store for sustainable and ethical products
 
 <img src="screenshots/responsive.png">
 
