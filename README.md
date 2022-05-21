@@ -1,4 +1,4 @@
-# Sustainable.com 
+# My Sustainable Life.com 
 ## An E-commerce Online Store for sustainable and ethical products
 
 <img src="screenshots/responsive.png">
@@ -9,8 +9,6 @@ This project is a fictional e-commerce Website for a sustainable food and clothi
 
 ## Menu
 
-* [About](#About)
-
 * [UX](#ux)
 
   * User Stories
@@ -19,6 +17,8 @@ This project is a fictional e-commerce Website for a sustainable food and clothi
 
 * [Features](#features)
 
+  * User Story Evaluation
+
 * [Tecnologies Used](#tecnologies_used)
 
 * [Testing](#testing)
@@ -26,10 +26,6 @@ This project is a fictional e-commerce Website for a sustainable food and clothi
 * [Deployment](#deployment)
 
 * [Credits](#credits)
-
-# About
-
-
 
 # UX
   ## User stories
