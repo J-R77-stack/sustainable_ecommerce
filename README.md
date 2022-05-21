@@ -143,6 +143,9 @@ This project is a fictional e-commerce Website for a sustainable food and clothi
   12. [Heroku](https://www.heroku.com/)
       * Used for Deployment and storage of app.
 
+  13. [Prettier](https://prettier.io/)
+      * Used for code formatting.
+
 # Testing
 
 I used the W3C Validators to check for errors in the HTML and CSS Files of the project and PEP8 online checker for the python code.

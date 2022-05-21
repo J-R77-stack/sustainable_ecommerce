@@ -7,8 +7,9 @@ from .models import Product, Category
 from .forms import ProductForm
 
 
-def all_products (request):
-    """ A view to show the products page and handle sorting and searching queries"""
+def all_products(request):
+    """ A view to show the products page and
+        handle sorting and searching queries """
 
     products = Product.objects.all()
     query = None
@@ -42,11 +43,12 @@ def all_products (request):
             if not query:
                 messages.error(request, "You didn't enter any search details!")
                 return redirect(reverse('products'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+
+            queries = Q(name__icontains=query) | \
+                Q(description__icontains=query)
             products = products.filter(queries)
 
-    current_sorting = f'{sort}_{direction}'        
+    current_sorting = f'{sort}_{direction}'
 
     context = {
         'products': products,
@@ -58,13 +60,13 @@ def all_products (request):
     return render(request, 'products/products.html', context)
 
 
-def product_info (request, product_id):
+def product_info(request, product_id):
     """ A view to show the individual product information"""
 
     product = get_object_or_404(Product, pk=product_id)
 
     context = {
-        'product' : product,
+        'product': product,
     }
 
     return render(request, 'products/product_info.html', context)
@@ -84,16 +86,17 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_info', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add product. \
+                Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
     }
 
-    return render(request, template, context)    
+    return render(request, template, context)
 
 
 @login_required
@@ -112,7 +115,8 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_info', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update product. \
+                Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -133,8 +137,8 @@ def delete_product(request, product_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-        
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
-    return redirect(reverse('products'))    
+    return redirect(reverse('products'))
