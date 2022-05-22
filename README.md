@@ -19,7 +19,7 @@ This project is a fictional e-commerce Website for a sustainable food and clothi
 
   * User Story Evaluation
 
-* [Tecnologies Used](#tecnologies_used)
+* [Tecnologies Used](#tecnologiesused)
 
 * [Testing](#testing)
 
@@ -132,26 +132,22 @@ This project is a fictional e-commerce Website for a sustainable food and clothi
   8. [Balsamiq](https://balsamiq.com/)
       * A wireframe program used to create the mock-ups.
 
-  9. [Microsoft Word](https://en.wikipedia.org/wiki/Microsoft_Word)
-      * Used for drawing up the data model.
-      <img src="screenshots/datamodel.png">
-
-  10. [AmazonS3](https://aws.amazon.com/s3/)
+  9. [AmazonS3](https://aws.amazon.com/s3/)
       * Hosted media and static files.
 
-  11. [SQLite3](https://en.wikipedia.org/wiki/SQLite)
+  10. [SQLite3](https://en.wikipedia.org/wiki/SQLite)
       * Used as this is the default database for Django.
 
-  12. [Heroku](https://www.heroku.com/)
+  11. [Heroku](https://www.heroku.com/)
       * Used for Deployment and storage of app.
 
-  13. [Prettier](https://prettier.io/)
+  12. [Prettier](https://prettier.io/)
       * Used for code formatting.
 
-  14. [jQuery ](https://jquery.com/)
+  13. [jQuery ](https://jquery.com/)
       * jQuery came with Bootstrap.
 
-  15. [Micosoft Word](https://en.wikipedia.org/wiki/Microsoft_Word)
+  14. [Micosoft Word](https://en.wikipedia.org/wiki/Microsoft_Word)
       * Used for drawing up the data models.
 
       <img src="screenshots/order-model.png">
@@ -319,13 +315,13 @@ To ensure that the project fulfils the goals set out in the user stories:
 21. As an Online Shop Owner I want to be able to Add a product so that I can add new items to my shop
      * The online shop owner can add products to their store.
 ### Product Management
-<img src="screenshots/product-management1.png">
-<img src="screenshots/product-management2.png">
+<img src="screenshots/websiteimages/product-management1.png">
+<img src="screenshots/websiteimages/product-management2.png">
 
 21. As an Online Shop Owner I want to be able to Edit and update products so that I can Change the product descriptions, prices, images and criteria
      * The online shop owner can edit and update products in their store.
 ### Product Management
-<img src="screenshots/product-management3.png">
+<img src="screenshots/websiteimages/product-management3.png">
 
 
 # Deployment
@@ -381,9 +377,9 @@ command: git push heroku main
 
  # Credits 
 
- * Code Institutes two walk through Django projects were used as a base to build my own project.
+ * Code Institutes walk through Django projects were used as a base to build my own project.
 
- * The Checkout app and bag app logic was taken from the Botique Ado Walkthrough project by [Code Instistute](https://codeinstitute.net/) [Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1/)
+ * The Checkout app and bag app logic was taken from the Boutique Ado walkthrough project by [Code Instistute](https://codeinstitute.net/) [Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1/)
 
  * [Official Django Documentation](https://docs.djangoproject.com/en/3.2/) was researched for syntax, code expressions, code functionalities.
 
