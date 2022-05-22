@@ -1,7 +1,7 @@
 # My Sustainable Life.com 
 ## An E-commerce Online Store for sustainable and ethical products
 
-<img src="screenshots/responsive.png">
+<img src="screenshots/websiteimages/responsive.png">
 
 This project is a fictional e-commerce Website for a sustainable food and clothing company. People looking for local, ethical and sustainable clothes or food products can view the site on all types of devices, where they can learn more and also order products and create a user account to check order history and update and save contact info. The site is fully responsive and accessible.
 
