@@ -165,49 +165,45 @@ I used the W3C Validators to check for errors in the HTML and CSS Files of the p
   * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
   * [PEP8](http://pep8online.com/)
 
-  ### HTML Validation
+### HTML Validation
 
-  [W3C URI Validator Results](https://github.com/J-R77-stack/sustainable_ecommerce/tree/main/testing/html-checker)
+[W3C URI Validator Results](https://github.com/J-R77-stack/sustainable_ecommerce/tree/main/testing/html-checker)
   
 
 ### CSS Validation
 
-<img src="screenshots/csscheck.png">
+[W3C CSS Validator Results](https://github.com/J-R77-stack/sustainable_ecommerce/tree/main/testing/css-checker)
 
 ### PEP8 Validation
 
-1. admin.py
-<img src="screenshots/admin.png">
-
-2. forms.py
-<img src="screenshots/forms.png">
-
-3. models.py
-<img src="screenshots/models.png">
-
-4. urls.py
-<img src="screenshots/urls.png">
-
-4. views.py
-<img src="screenshots/views.png">
+[PEP8 Results](https://github.com/J-R77-stack/sustainable_ecommerce/tree/main/testing/pep8-checker)
     
 ## User Stories Evaluation
 To ensure that the project fulfils the goals set out in the user stories:
-  ### Site User Stories
-  1. As a site user I can understand the purpose of the site so that I can learn more about the business with ease.
-    * Once in the site the user is welcomed with an attractive and easy to navigate landing page with a fuctional Nav bar which takes them to the other pages of the site. The Hero Image holds an inspirational quote and a call to action button to book an appoointment straight away. The name of the councellor is easy to see in the top left hand corner. The user is also able to navigate from all pages to the councellors social media sites.  The user can click on the about services or contact tab in the nav bar to learn more about the business.
+  ### Viewing and Navigation
+  1. As an Online shopper I want to be able to view a list of products so that I can find and choose some to buy.
+    * The user can use the nav bar to select a particular category of product to view, select all products, type in the search bar for a product or hit the go shopping button.
 
-<img src="screenshots/home1.png">
+  Home Page
+  <img src="screenshots/websiteimages/homepage.png">
 
-<img src="screenshots/about1.png">
+  Nav Bar
+  <img src="screenshots/websiteimages/navbar.png">
 
-<img src="screenshots/contactp.png">
+  All Products
+  <img src="screenshots/websiteimages/product-dropdown.png">
 
-<img src="screenshots/service1.png">
+  Clothing
+  <img src="screenshots/websiteimages/clothing-dropdown.png">
 
-<img src="screenshots/service2.png">
-    
-<img src="screenshots/social.png">
+  Homeware
+  <img src="screenshots/websiteimages/homeware-dropdown.png">
+
+  Groceries
+  <img src="screenshots/websiteimages/groceries-dropdown.png">
+  
+  Deals
+  <img src="screenshots/websiteimages/deals-dropdown.png">
 
   2. As a site user I can easily navigate the site so that I can find what I'm looking for.
      * By using the Nav bar the site user can easily navigate the site
