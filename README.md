@@ -244,6 +244,10 @@ To ensure that the project fulfils the goals set out in the user stories:
  8. As a Site User I want to be able to have an email confirmation sent after registering for an account so that I can see that my account registration was successful
      * The user can recieve an email confirmation of account registration.
 ### Registration
+<img src="screenshots/websiteimages/email1.png">
+<img src="screenshots/websiteimages/email2.png">
+<img src="screenshots/websiteimages/email3.png">
+<img src="screenshots/websiteimages/email4.png">
 
 9. As a Site User I want to be able to have my own personal user profile so that I can access my recent orders, order history and save my payment info
      * The user can create and view their own profile page
@@ -294,6 +298,9 @@ To ensure that the project fulfils the goals set out in the user stories:
      * The user can change items in their bag.
 ### Update Bag
 <img src="screenshots/websiteimages/updatebag.png">
+
+## Bugs
+There is a issue with the update function on the bag which i did not have time to fix before the hand in deadline. The user is unable to update the quantity of the bag using this button.
 
 18. As an Online Shopper I want to be able to Know that my payment info is safe and secure so that I can Feel confident in providing it for an online purchase
      * The user can use a safe and secure payment method with stripe.
