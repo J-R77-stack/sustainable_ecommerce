@@ -175,7 +175,17 @@ I used the W3C Validators to check for errors in the HTML and CSS Files of the p
 ### PEP8 Validation
 
 [PEP8 Results](https://github.com/J-R77-stack/sustainable_ecommerce/tree/main/testing/pep8-checker)
-    
+
+## Performance
+Lighthouse was used in Chrome developer tools to test the performance of the page. This was done for both mobile and desktop.
+
+### Desktop
+<img src="screenshots/websiteimages/desktop.png">
+
+### Mobile
+<img src="screenshots/websiteimages/mobile.png">
+
+
 ## User Stories Evaluation
 To ensure that the project fulfils the goals set out in the user stories:
 ### Viewing and Navigation
