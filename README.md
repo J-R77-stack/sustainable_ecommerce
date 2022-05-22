@@ -167,7 +167,7 @@ I used the W3C Validators to check for errors in the HTML and CSS Files of the p
 
   ### HTML Validation
 
-  <img src="testing/html-checker">
+  [W3C URI Validator Results](https://github.com/J-R77-stack/sustainable_ecommerce/tree/main/testing/html-checker)
   
 
 ### CSS Validation
