@@ -17,7 +17,12 @@
     />
     <meta name="description" content="Ecommerce" />
     <meta name="author" content="developer" />
-    {% endblock %} {% block extra_meta %} {% endblock %} {% block corecss %}
+    {% endblock %}
+
+    {% block extra_meta %}
+    {% endblock %} 
+    
+    {% block corecss %}
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -30,7 +35,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="{% static 'css/base.css' %}" />
-    {% endblock %} {% block extra_css %} {% endblock %} {% block corejs %}
+    {% endblock %} 
+
+    {% block extra_css %} 
+    {% endblock %} 
+    
+    {% block corejs %}
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -54,7 +64,10 @@
     ></script>
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
-    {% endblock %} {% block extra_js %} {% endblock %}
+    {% endblock %} 
+
+    {% block extra_js %} 
+    {% endblock %}
 
     <title>Sustainable {% block extra_title %}{% endblock %}</title>
   </head>

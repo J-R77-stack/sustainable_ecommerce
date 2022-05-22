@@ -58,38 +58,42 @@ This project is a fictional e-commerce Website for a sustainable food and clothi
   22. As an Online Shop Owner I want to be able to Edit and update products so that I can Change the product descriptions, prices, images and criteria
 
   ## Design
-   There are links and a Nav bar provided to connect to other parts of the site. Each page is fully responsive.
-
-  
-  The main fonts used are    and the main colours are 
+  ### Colour Scheme
+  The main colours in the website theme for header, background and text are Green, Grey, Black and White
+  ### Typography
+  I used Bootstrap 4.4.1 for the components and styling. Oswald and sans-serif are the main fonts used.
+  ### Images
+  Imagery was chosen to go with the website's colour and content theme. I'm using earthy and green images for the Hero image and favicon which are deep-toned, soothing and have attractive graphics. For the products I'm using high resolution images sorced from google.
 
   ## Wireframes
   Below are the wireframes that I created using [Balsamiq](https://balsamiq.com/)
 
   ### Home Page
-  <img src="screenshots/home.png">
+  <img src="screenshots/home-wireframe.png">
 
-  ### About Page
-  <img src="screenshots/About.png">
+  ### Product Page
+  <img src="screenshots/product-wireframe.png">
 
-  ### Services Page
-  <img src="screenshots/services.png">
+  ### Product Info Page
+  <img src="screenshots/product-info-wireframe.png">
 
-  ### Book Page
-  <img src="screenshots/book.png">
-
-  ### Contact Page
-  <img src="screenshots/contact.png">
-
-  ### Blog Page
-  <img src="screenshots/blog.png">
+  ###  Shopping Bag Page
+  <img src="screenshots/bag-wireframe.png">
 
   # Features
 
+  ## Responsivity
+  The application is responsive on all device sizes, thanks to using Boostrap. In mobile view there is a collapsible menu icon. All images, text labels, forms get appropriately resized. 
+
+  ## Interactive elements
+  1. Nav links for Home, All Products, Clothing, Homeware, Groceries, Deals, My account and Shopping basket. They also have dropdown menus with further links. The search bar is also interactive.
+  2. Form input fields on signin, register, signout, checkout, product management and my profile.
+  3. Buttons - including form buttons (signin, register, signout, checkout, product management and my profile buttons) and page buttons (Go shopping, buy me now, add to bag, keep shopping).
+
   ## Future Features
-   1. 
-   2. 
-   3. 
+   1. Coupon code field in checkout.
+   2. Larger range of products.
+   3. blog / helpful info about living a sustainable life.
 
   # Tecnologies Used
     
@@ -142,6 +146,17 @@ This project is a fictional e-commerce Website for a sustainable food and clothi
   13. [Prettier](https://prettier.io/)
       * Used for code formatting.
 
+  14. [jQuery ](https://jquery.com/)
+      * jQuery came with Bootstrap.
+
+  15. [Micosoft Word](https://en.wikipedia.org/wiki/Microsoft_Word)
+      * Used for drawing up the data models.
+
+      <img src="screenshots/order-model.png">
+      <img src="screenshots/orderLineItem-model.png">
+      <img src="screenshots/product-model.png">
+      <img src="screenshots/profile-model.png">
+
 # Testing
 
 I used the W3C Validators to check for errors in the HTML and CSS Files of the project and PEP8 online checker for the python code.
@@ -152,7 +167,7 @@ I used the W3C Validators to check for errors in the HTML and CSS Files of the p
 
   ### HTML Validation
 
-  <img src="screenshots/htmlcheck.png">
+  <img src="testing/html-checker">
   
 
 ### CSS Validation
