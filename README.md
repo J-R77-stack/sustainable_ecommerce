@@ -309,9 +309,6 @@ To ensure that the project fulfils the goals set out in the user stories:
 ### Update Bag
 <img src="screenshots/websiteimages/updatebag.png">
 
-## Bugs
-There is a issue with the update function on the bag which i did not have time to fix before the hand in deadline. The user is unable to update the quantity of the bag using this button.
-
 18. As an Online Shopper I want to be able to Know that my payment info is safe and secure so that I can Feel confident in providing it for an online purchase
      * The user can use a safe and secure payment method with stripe.
 ### Secure Payment
