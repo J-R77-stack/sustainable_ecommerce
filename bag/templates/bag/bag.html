@@ -64,10 +64,14 @@
                     <div class="form-group w-50">
                       <div class="input-group">
                         <div
-                          class="input-group-prepend"
-                          data-item_id="{{ item.item_id }}"
-                          id="decrement-qty_{{ item.item_id }}"
-                        ></div>
+                          class="input-group-prepend">
+                          <button class="decrement-qty btn btn-sm btn-black rounded-0" 
+                              data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                <span>
+                                  <i class="fas fa-minus fa-sm"></i>
+                                </span>
+                          </button>
+                        </div>
                         <input
                           class="form-control qty_input"
                           type="number"
@@ -79,10 +83,14 @@
                           id="id_qty_{{ item.item_id}}"
                         />
                         <div
-                          class="input-group-append"
-                          data-item_id="{{ item.item_id }}"
-                          id="increment-qty_{{ item.item_id }}"
-                        ></div>
+                          class="input-group-append">
+                          <button class="increment-qty btn btn-sm btn-black rounded-0"
+                              data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                  <span>
+                                     <i class="fas fa-plus fa-sm"></i>
+                                  </span>
+                          </button>
+                        </div>
                         {% if item.product.trainer_sizes or product.available_sizes %}
                         <input
                           type="hidden"
@@ -93,30 +101,10 @@
                       </div>
                     </div>
                   </form>
-                  <div
-                    class="btn-group btn-group-sm"
-                    role="group"
-                    aria-label="Basic example"
-                  >
-                    <a
-                      ><button 
-                      type="button" 
-                      class="btn btn-info update-link"
-                      >
-                        Update
-                      </button></a
-                    >
-                    <a
-                      ><button
-                        type="button"
-                        class="btn btn-danger remove-item"
-                        id="remove_{{ item.item_id }}"
-                        data-product_size="{{ item.size }}"
-                      >
-                        Remove
-                      </button></a
-                    >
-                  </div>
+                  
+                  <a class="update-link"><button class="btn btn-info btn-sm">Update</button></a>
+                  <a class="remove-item" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><button class="btn btn-danger btn-sm">Remove</button></a>
+                  
                 </td>
                 <td>
                   <p>£{{ item.product.price | calc_subtotal:item.quantity }}</p>
