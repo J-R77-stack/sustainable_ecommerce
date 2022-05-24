@@ -83,13 +83,15 @@
                       </div>
                     </div>
                   </form>
-                   <a class="update-link"><button class="btn btn-info btn-sm ml-3">
+                  <div class="btn-group btn-group-sm">
+                   <a class="update-link"><button class="btn btn-info">
                      Update</button>
                     </a>
                   <a class="remove-item" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}">
-                    <button class="btn btn-danger ml-2 btn-sm">
+                    <button class="btn btn-danger">
                       Remove</button>
                     </a>
+                  </div>
                 </td>
                 <td>
                   <p>£{{ item.product.price | calc_subtotal:item.quantity }}</p>
