@@ -18,6 +18,7 @@ This project is a fictional e-commerce Website for a sustainable food and clothi
 * [Features](#features)
 
   * User Story Evaluation
+  * Search Engine Optimization and Web Marketing
 
 * [Tecnologies Used](#tecnologiesused)
 
@@ -337,6 +338,26 @@ To ensure that the project fulfils the goals set out in the user stories:
 ### Product Management
 <img src="screenshots/websiteimages/product-management3.png">
 
+## Search Engine Optimization and Web Marketing
+
+1. The website contains a footer on the Home page with a link to the shops facebook page, Useful links to other relevant sites being Friends of the earth and green peace. It also contains a link to the websites privacy policy and the ability to subscribe to newsletter marketing with mailchimp.
+
+<img src="screenshots/websiteimages/footer.png">
+
+2. The user can view the facebook business page by clicking "Follow us on Facebook" in the footer.
+
+<img src="screenshots/websiteimages/facebook1.png">
+<img src="screenshots/websiteimages/facebook2.png">
+<img src="screenshots/websiteimages/facebook3.png">
+<img src="screenshots/websiteimages/facebook4.png">
+<img src="screenshots/websiteimages/facebook5.png">
+<img src="screenshots/websiteimages/facebook6.png">
+
+3. Marketing types excersise for My Sustainable Life.
+
+<img src="screenshots/websiteimages/marketing1.png">
+<img src="screenshots/websiteimages/marketing2.png">
+<img src="screenshots/websiteimages/marketing3.png">
 
 # Deployment
  1. In the Gitpod Terminal install django, gunicorn, supporting libraries, requirements file and created Project and App.
