@@ -125,5 +125,56 @@ body {
     width:600px;
 }
 
+/* Media queries */
 
-	
+/* For larger to medium screens size from 1200px wide and down */
+@media screen and (max-width: 1200px) {
+    #mc_embed_signup {
+      width: 500px;
+    }
+    .container-wrapper {
+        width: 100%;
+        height: 500px;
+    }
+  }
+
+/* For medium screens size from 1000px wide and down */
+@media screen and (max-width: 1000px) {
+    #mc_embed_signup {
+      width: 400px;
+    }
+}
+
+/* For medium screens size from 800px wide and down */
+@media screen and (max-width: 800px) {
+    #mc_embed_signup {
+      width: 350px;
+    }
+  }
+
+/* For small screens size from 767px wide and down */
+@media screen and (max-width: 767px) {
+    #mc_embed_signup {
+      width: 600px;
+    }
+    .container-wrapper {
+        height: 800px;
+    }
+  }
+
+/* For small screens size from 650px wide and down */
+  @media screen and (max-width: 650px) {
+      #mc_embed_signup {
+        width: 500px;
+      }
+    }
+
+/* For small screens size from 500px wide and down */
+@media screen and (max-width: 500px) {
+    #mc_embed_signup {
+      width: 300px;
+    }
+    .container-wrapper {
+        height: 880px;
+    }
+  }    
