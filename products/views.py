@@ -4,7 +4,8 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from django.contrib.auth.decorators import login_required
 from .models import Product, Category
-from .forms import ProductForm
+from .forms import ProductForm, ProductReviewsForm
+from django.views.generic import DetailView
 
 
 def all_products(request):
@@ -142,3 +143,19 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+def ProductReviewDetail(request, product_id):
+    
+    product = get_object_or_404(Product, pk=product_id)
+
+    context = {
+        'product': product,
+        'form': ProductReviewsForm,
+    }
+
+    return render(request, 'products/product_review_detail.html', context)
+
+
+
+

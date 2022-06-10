@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<hr>
+<h4>Product Reviews</h4>
+{% for product_reviews in product.product_reviews_set.all %}
+<small>
+    <p>{{ product_reviews.author }} &middot; {{ product_reviews }}</p>
+</small>
+{% endfor %}
+<hr>
+
+<h4>Add a review</h4>
+<form action="" method="post">{% csrf_token %}
+    {{ form|crispy }}
+    <button class="btn btn-success ml-2" type="submit">Save</button>
+</form>
+
+
+{% endblock content%}
