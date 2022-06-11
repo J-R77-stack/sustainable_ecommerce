@@ -51,16 +51,6 @@
               <i class="fas fa-barcode"></i> {{ product.category.friendly_name}}</a>
           </h6>
           {% endif %}
-          {% for product_reviews in product.product_reviews_set.all %}
-          <small>
-            <p>
-              <span class="font-weight-bold">
-                Review by : {{ product_reviews.author }} &middot;
-              </span>
-              {{ product_reviews }}
-            </p>
-          </small>
-          {% endfor %}
           {% if request.user.is_superuser %}
           <small>
             <a href="{% url 'edit_product' product.id %}">Edit</a> |

@@ -1,5 +1,5 @@
 from django import forms
-from .models import Product, Category, Product_reviews
+from .models import Product, Category
 from .widgets import CustomClearableFileInput
 
 
@@ -21,7 +21,3 @@ class ProductForm(forms.ModelForm):
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = ''
 
-class ProductReviewsForm(forms.ModelForm):
-    class Meta:
-        model = Product_reviews
-        fields = ("product_reviews", "author")
