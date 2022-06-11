@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <hr>
+            <h2 class="logo-font mb-4">Sustainable Life Tips</h2>
+            <hr>
+            <h5 class="text-muted">Add a Tip</h5>
+            <hr>
+        </div>
+    </div>
+    <form action="{% url 'post_new' %}" method="post">{% csrf_token %}
+        {% for field in form %}
+        {{ field | as_crispy_field }}
+        {% endfor %}
+        <input type="submit" value="Add Tip" class="btn btn-dark >
+    </form>
+    <div>
+        {% endblock %}
