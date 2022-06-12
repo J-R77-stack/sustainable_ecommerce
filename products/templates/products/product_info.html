@@ -26,6 +26,8 @@
             <small class="text-muted"><i class="fas fa-grin-stars"></i> {{ product.rating }} / 5
             </small>
           </h5>
+          <a href="{% url 'user_wishlist' product.id %}" class="btn btn-primary mb-3" tabindex="-1" role="button"
+            aria-disabled="true">Add To Wishlist</a>
           {% if product.category %}
           <h6>
             <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
@@ -72,8 +74,8 @@
           {% endwith %}
 
           <div class="col-12">
-            <p class="ml-4"><strong>Quantity:</strong></p>
-            <div class="form-group w-25 ml-3">
+            <p class=""><strong>Quantity:</strong></p>
+            <div class="form-group w-25 ">
               <div class="input-group">
                 <div class="input-group-prepend" data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
                 </div>
@@ -85,7 +87,7 @@
             </div>
           </div>
           <div class="col-12">
-            <a href="{% url 'products' %}" class="btn btn-dark ml-3 mb-3">
+            <a href="{% url 'products' %}" class="btn btn-dark  mb-3">
               <span class="icon">
                 <i class="fas fa-chevron-left"></i>
               </span>

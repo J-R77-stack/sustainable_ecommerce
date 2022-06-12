@@ -29,6 +29,8 @@ class Product(models.Model):
                                  blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
+    users_wishlist = models.ManyToManyField(User, related_name="user_wishlist", blank=True)
+
 
     def __str__(self):
         return self.name
