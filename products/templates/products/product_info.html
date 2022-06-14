@@ -100,6 +100,24 @@
       </div>
     </div>
   </div>
+  <hr>
+  <div class="card">
+    <div class="card-body">
+      <h4>Reviews</h4>
+      {% for review in product.reviews.all %}
+      <p>
+        <strong style="color: black;">Date: </strong>{{ review.date_added|date:"Y-m-d"}}
+      </p>
+      <p class="card-text">{{ review.content }}.
+        {{ review.stars }} <strong style="color: gold;"><i class="fas fa-star"></i></strong>
+      </p>
+      {% empty %}
+      <div>
+        <p class="card-text">There are no Reviews yet</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
 {% endblock %}
 {% block postloadjs %}

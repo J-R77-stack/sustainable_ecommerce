@@ -37,6 +37,9 @@ class Product(models.Model):
 
 
 class ProductReviews(models.Model):
+    class Meta:
+        verbose_name_plural = 'Product Reviews'
+        
     product = models.ForeignKey(Product, related_name='reviews', on_delete=models.CASCADE)
     user = models.ForeignKey(User, related_name='reviews', on_delete=models.CASCADE)
 
