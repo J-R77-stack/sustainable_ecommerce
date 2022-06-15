@@ -22,10 +22,10 @@
           <h4 class="card-title">{{ product.name }}</h4>
           <p class="card-text">{{ product.description }}</p>
           <h5 class="card-title">£{{ product.price }}</h5>
-          <h5 class="card-title">
-            <small class="text-muted"><i class="fas fa-grin-stars"></i> {{ product.rating }} / 5
-            </small>
-          </h5>
+          <p class="card-title">
+            <i class="fas fa-star" style="color: gold;"></i> {% if product.get_rating == 0 %}No ratings
+            yet{% else %}{{ product.get_rating|floatformat:1 }}{% endif %}
+          </p>
           <a href="{% url 'user_wishlist' product.id %}" class="btn btn-primary mb-3" tabindex="-1" role="button"
             aria-disabled="true">Add To Wishlist</a>
           {% if product.category %}
@@ -101,21 +101,60 @@
     </div>
   </div>
   <hr>
-  <div class="card">
+  <div class="card col-12">
     <div class="card-body">
       <h4>Reviews</h4>
+      <hr>
       {% for review in product.reviews.all %}
       <p>
         <strong style="color: black;">Date: </strong>{{ review.date_added|date:"Y-m-d"}}
       </p>
+      <p><strong style="color: black;">{{ review.user }} </strong>Rates the Product: {{ review.stars }} <strong
+          style="color: gold;"><i class="fas fa-star"></i></strong></p>
       <p class="card-text">{{ review.content }}.
-        {{ review.stars }} <strong style="color: gold;"><i class="fas fa-star"></i></strong>
       </p>
       {% empty %}
-      <div>
-        <p class="card-text">There are no Reviews yet</p>
+      <div class="mb-2">
+        <p class="card-text">There are no Reviews yet...</p>
       </div>
       {% endfor %}
+      <div class="mb-2">
+        {% if request.user.is_authenticated %}
+        <form method="post" action="">
+          {% csrf_token %}
+          <div class="field">
+            <label>Stars</label>
+            <div class="control">
+              <div class="select">
+                <select name="stars">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3" selected>3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="field mt-2">
+            <label>Content</label>
+            <div class="control">
+              <textarea name="content" class="textarea col-md-12 col-lg-12" cols="100" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="field mt-2">
+            <div class="control">
+              <button class="btn btn-success">Submit</button>
+            </div>
+          </div>
+        </form>
+        {% else %}
+        <div class="mb-2">
+          <p>Please <a href="{% url 'account_login' %}" class=" btn-sm btn-secondary">Login</a> to add review
+          </p>
+        </div>
+        {% endif %}
+      </div>
     </div>
   </div>
 </div>

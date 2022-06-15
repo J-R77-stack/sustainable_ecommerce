@@ -42,7 +42,8 @@
           <h4 class="card-title">{{ product.name }}</h4>
           <h5 class="card-title">
             £{{ product.price }}
-            <small><i class="fas fa-grin-stars ml-5"></i> {{ product.rating }} / 5
+            <small><i class="fas fa-star" style="color: gold;"></i> {% if product.get_rating == 0 %}No ratings
+              yet{% else %}{{ product.get_rating|floatformat:1 }}{% endif %}
             </small>
           </h5>
           {% if product.category %}

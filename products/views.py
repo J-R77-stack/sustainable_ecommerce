@@ -63,19 +63,17 @@ def all_products(request):
 
 def product_info(request, product_id):
     """ A view to show the individual product information"""
-
-    if request.method == 'POST'and request.user.is_authenticated:
-        stars = request.POST.get('stars', 3)
-        content = request.POST.get('content', '')
-        review = ProductReviews.object.create(product=product, user=request.user, stars=stars, content=content)
-
-        return redirect('products/product_info.html')
-
+    
     product = get_object_or_404(Product, pk=product_id)
 
     context = {
         'product': product,
     }
+    
+    if request.method == 'POST':
+       stars = request.POST.get('stars', 3)
+       content = request.POST.get('content', '')
+       review = ProductReviews.objects.create(product=product, user=request.user, stars=stars, content=content)
 
     return render(request, 'products/product_info.html', context)
 
