@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'profiles',
     'storages',
     'life_tips',
+    'contact_us',
 ]
 
 MIDDLEWARE = [
