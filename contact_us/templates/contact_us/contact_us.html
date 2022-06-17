@@ -11,6 +11,11 @@
             <hr />
             <h2 class="logo-font mb-4">Contact Us</h2>
             <hr />
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </div>
     {% endblock %}
