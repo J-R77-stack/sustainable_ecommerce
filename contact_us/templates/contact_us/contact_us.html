@@ -7,10 +7,12 @@
 <div class="overlay"></div>
 <div class="container mb-2">
     <div class="row">
-        <div class="col">
+        <div class="col-12 col-lg-6">
             <hr />
             <h2 class="logo-font mb-4">Contact Us</h2>
             <hr />
+            <p class="">Please fill out the form below to get in contact with us</p>
+            <hr>
             <form action="" method="post">
                 {% csrf_token %}
                 {{ form|crispy }}

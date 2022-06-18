@@ -22,8 +22,16 @@ class CategoryAdmin(admin.ModelAdmin):
         'friendly_name',
     )
 
+class ProductReviewsAdmin(admin.ModelAdmin):
+    list_display = (
+        'user',
+        'product',
+        'content',
+        'stars',
+        'date_added',
+    )
 
 
-admin.site.register(Product, ProductAdmin,)
+admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
-admin.site.register(ProductReviews)
+admin.site.register(ProductReviews, ProductReviewsAdmin)
