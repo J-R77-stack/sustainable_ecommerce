@@ -217,4 +217,15 @@ STRIPE_CURRENCY = 'gbp'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
-DEFAULT_FROM_EMAIL = 'sustainable@example.com'
+# DEFAULT_FROM_EMAIL = 'sustainable@example.com'
+DEFAULT_FROM_EMAIL = 'johnnyrasmay81@gmail.co'
+
+CONTACT_EMAIL = 'johnnyramsay81@gmail.com'
+ADMIN_EMAILS = ['johnnyramsay81@gmail.com']
+
+# Twilio SendGrid
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = os.environ.get('SENDGRID_API_KEY')
