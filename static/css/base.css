@@ -1,180 +1,193 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    background: url('/media/background_image.webp') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 184px);
-    color: #555;
-    font-family: 'Oswald', sans-serif;
+  background: url('/media/background_image.webp') no-repeat center center fixed;
+  background-size: cover;
+  height: calc(100vh - 184px);
+  color: #555;
+  font-family: 'Oswald', sans-serif;
 }
 
 
 .go-shopping-button {
-    background: white;
-    color: black;
-    min-width: 200px;
+  background: white;
+  color: black;
+  min-width: 200px;
 }
 
 .logo-font {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .bg-black {
-    background:green;
+  background: green;
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: #FAF9F6;
-	z-index: -1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: #FAF9F6;
+  z-index: -1;
+}
+
+.overlay2 {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: grey;
+  z-index: -1;
 }
 
 
 #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: #85754E;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-  }
-  
-  #myBtn:hover {
-    background-color: black;
-  }
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #85754E;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
 
-  /* ------------------------------- bootstrap toasts */
+#myBtn:hover {
+  background-color: black;
+}
+
+/* ------------------------------- bootstrap toasts */
 
 .message-container {
-    position: fixed;
-    top: 70px;
-    right: 40px;
-    z-index: 99999999999;
+  position: fixed;
+  top: 70px;
+  right: 40px;
+  z-index: 99999999999;
 }
 
 .custom-toast {
-    overflow: visible;
+  overflow: visible;
 }
 
 .toast-capper {
-    height: 10px;
+  height: 10px;
 }
 
 /* ------------------------------- shopping bag toast */
 
 .bag-notification-wrapper {
-    height: 100px;
-    overflow-x: hidden;
-    overflow-y: auto;
+  height: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* Product Form */
 
 .btn-file {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-file input[type="file"] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0;
-    cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .custom-checkbox .custom-control-label::before {
-    border-radius: 0;
-    border-color: #dc3545;
+  border-radius: 0;
+  border-color: #dc3545;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #dc3545;
-    border-color: #dc3545;
-    border-radius: 0;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  border-radius: 0;
 }
 
 .container-wrapper {
-    position: flex;
-    bottom: 0;
-    width: 100%;
-    /* Height of the footer*/ 
-    height: 430px;
-    background: #FAF9F6;
+  position: flex;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/
+  height: 430px;
+  background: #FAF9F6;
 }
 
-/* mailchimp*/ 
+/* mailchimp*/
 #mc_embed_signup {
-    background:#FAF9F6; 
-    clear:left; 
-    font:14px Helvetica,Arial,sans-serif;  
-    width:600px;
+  background: #FAF9F6;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+  width: 600px;
 }
 
 /* Media queries */
 
 /* For larger to medium screens size from 1200px wide and down */
 @media screen and (max-width: 1200px) {
-    #mc_embed_signup {
-      width: 500px;
-    }
-    .container-wrapper {
-        width: 100%;
-        height: 500px;
-    }
+  #mc_embed_signup {
+    width: 500px;
   }
+
+  .container-wrapper {
+    width: 100%;
+    height: 500px;
+  }
+}
 
 /* For medium screens size from 1000px wide and down */
 @media screen and (max-width: 1000px) {
-    #mc_embed_signup {
-      width: 400px;
-    }
+  #mc_embed_signup {
+    width: 400px;
+  }
 }
 
 /* For medium screens size from 800px wide and down */
 @media screen and (max-width: 800px) {
-    #mc_embed_signup {
-      width: 350px;
-    }
+  #mc_embed_signup {
+    width: 350px;
   }
+}
 
 /* For small screens size from 767px wide and down */
 @media screen and (max-width: 767px) {
-    #mc_embed_signup {
-      width: 600px;
-    }
-    .container-wrapper {
-        height: 800px;
-    }
+  #mc_embed_signup {
+    width: 600px;
   }
 
+  .container-wrapper {
+    height: 800px;
+  }
+}
+
 /* For small screens size from 650px wide and down */
-  @media screen and (max-width: 650px) {
-      #mc_embed_signup {
-        width: 500px;
-      }
-    }
+@media screen and (max-width: 650px) {
+  #mc_embed_signup {
+    width: 500px;
+  }
+}
 
 /* For small screens size from 500px wide and down */
 @media screen and (max-width: 500px) {
-    #mc_embed_signup {
-      width: 300px;
-    }
-    .container-wrapper {
-        height: 880px;
-    }
-  }    
+  #mc_embed_signup {
+    width: 300px;
+  }
+
+  .container-wrapper {
+    height: 880px;
+  }
+}
