@@ -8,10 +8,10 @@ def contact_view(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            email_subject = f'New contact_us {form.cleaned_data["email"]}: {form.cleaned_data["subject"]}'
+            email_subject = f'New contact_us email from:  {form.cleaned_data["email"]}: {form.cleaned_data["subject"]}'
             email_message = form.cleaned_data['message']
-            
-            send_mail(email_subject, email_message, settings.EMAIL_HOST_USER, fail_silently=False)
+            recipient = form.cleaned_data.get('email')
+            send_mail(email_subject, email_message, settings.EMAIL_HOST_USER, [recipient], fail_silently=False)
             return render(request, 'contact_us/contact_success.html')
     form = ContactForm()
     context = {'form': form}
