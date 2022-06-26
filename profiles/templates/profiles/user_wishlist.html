@@ -39,6 +39,12 @@
                     <p class="card-text"><small class="text-muted">£{{ product.price }}</small></p>
                     <a href="{% url 'user_wishlist' product.id %}" class="btn btn-secondary fw500" tabindex="-1"
                         role="button" aria-disabled="true">Remove from Wishlist</a>
+                    <a href="{% url 'products' %}" class="btn btn-dark  mb-3">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Keep Shopping</span>
+                    </a>
                 </div>
             </div>
         </div>
