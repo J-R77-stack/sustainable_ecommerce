@@ -10,8 +10,8 @@ def contact_view(request):
             form.save()
             email_subject = f'New contact_us {form.cleaned_data["email"]}: {form.cleaned_data["subject"]}'
             email_message = form.cleaned_data['message']
-            recipient = form.cleaned_data.get('email')
-            send_mail(email_subject, email_message, settings.EMAIL_HOST_USER, [recipient], fail_silently=False)
+            
+            send_mail(email_subject, email_message, settings.EMAIL_HOST_USER, fail_silently=False)
             return render(request, 'contact_us/contact_success.html')
     form = ContactForm()
     context = {'form': form}
