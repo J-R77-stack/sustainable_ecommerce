@@ -6,7 +6,7 @@
 <div class="overlay"></div>
 <div class="container">
     <div class="row">
-        <div class="col-12 col-md-6">
+        <div>
             <hr>
             <h2 class="logo-font mb-4">Sustainable Life Tips</h2>
             <hr>
@@ -17,13 +17,13 @@
     </div>
 
     <div class="row">
-        <div class="col-12 col-md-6">
-            <ul>
+        <div>
+            <ul class="list-group list-group-flush">
                 {% for post in post_list %}
-                <li>{{ post.text }}</li>
+                <li class="list-group-item list-group-item-success">{{ post.text }}</li>
                 {% endfor %}
             </ul>
-            <div><a href="{% url 'post_new' %}" class="btn btn-dark ml-3 mb-3">
+            <div class="mt-2"><a href="{% url 'post_new' %}" class="btn btn-dark">
                     <span class="text-uppercase">Add a Tip</span>
                 </a>
             </div>
