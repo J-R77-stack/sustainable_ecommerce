@@ -155,13 +155,13 @@ This project is a fictional e-commerce Website for a sustainable food and clothi
   14. [Micosoft Word](https://en.wikipedia.org/wiki/Microsoft_Word)
       * Used for drawing up the data models.
 
-      <img src="screenshots/order-model.png">
-      <img src="screenshots/orderLineItem-model.png">
-      <img src="screenshots/websiteimages/productmodel.png">
-      <img src="screenshots/profile-model.png">
-      <img src="screenshots/websiteimages/productreviewsmodel.png">
-      <img src="screenshots/websiteimages/lifetipsmodel.png">
-      <img src="screenshots/websiteimages/contactusmodel.png">
+<img src="screenshots/order-model.png">
+<img src="screenshots/orderLineItem-model.png">
+<img src="screenshots/websiteimages/productmodel.png">
+<img src="screenshots/profile-model.png">
+<img src="screenshots/websiteimages/productreviewsmodel.png">
+<img src="screenshots/websiteimages/lifetipsmodel.png">
+<img src="screenshots/websiteimages/contactusmodel.png">
 
 # Testing
 
