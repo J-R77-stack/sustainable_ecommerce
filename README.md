@@ -274,10 +274,10 @@ To ensure that the project fulfils the goals set out in the user stories:
 
 ### Sorting and Searching
 
-10. As an Online Shopper I want to be able to sort through a list of items so that I can find the best rated, priced and suitable items for me
-     * The user can sort through the products by price, rating and category.
+10. As an Online Shopper I want to be able to sort through a list of items so that I can find the best price and suitable items for me
+     * The user can sort through the products by price and category.
 ### All products
-<img src="screenshots/websiteimages/product-dropdown.png">
+<img src="screenshots/websiteimages/productdropdown1.png">
 
 11. As an Online Shopper I want to be able to sort a specific type of item so that I can find the best priced and rated in a particular category and also sort that category by name
      * The user can sort through the products using the navbar.
