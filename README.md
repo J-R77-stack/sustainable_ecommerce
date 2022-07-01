@@ -49,16 +49,20 @@ This project is a fictional e-commerce Website for a sustainable food and clothi
   12. As an Online Shopper I want to be able to sort through multiple types of products at the same time so that I can find the best rated and priced items across simultaneous categories for example food or clothing
   13. As an Online Shopper I want to be able to look for a product by its description or name so that I can find a particular item that I want to buy
   14. As an Online User I want to be able to see the products I've searched for and the number of results so that I can see if the item I want is available to buy
+  15. As an Online User I want to be able to look and add tips about living a sustainable life so that I can learn about and help others to try and life sustainable lives
+  16. As an Online Shopper I want to be able to add items to a wishlist so that I can keep a record of the products I like
+  17. As an Online Shopper I want to be able to add product reviews so that I can help other people to purchase good products
   ### Purchasing and Checkout
-  15. As an Online Shopper I want to be able to be-able to select a size and/or quantity of product so that I can make sure I don't accidentally choose the wrong item, quantity or size 
-  16. As an Online Shopper I want to be able to view my bag so that I can see the total cost and the items I will receive
-  17. As an Online Shopper I want to be able to change the quantity of items in my bag so that I can make changes to my purchase with ease
-  18. As an Online Shopper I want to be able to Know that my payment info is safe and secure so that I can Feel confident in providing it for an online purchase
-  19. As an Online Shopper I want to be able to View my order confirmation after checkout so that I can Make sure I haven't made any mistakes
-  20. As an Online Shopper I want to be able to Receive an email confirmation after checkout so that I can See what I've purchased and keep a record
+  18. As an Online Shopper I want to be able to be-able to select a size and/or quantity of product so that I can make sure I don't accidentally choose the wrong item, quantity or size 
+  19. As an Online Shopper I want to be able to view my bag so that I can see the total cost and the items I will receive
+  20. As an Online Shopper I want to be able to change the quantity of items in my bag so that I can make changes to my purchase with ease
+  21. As an Online Shopper I want to be able to Know that my payment info is safe and secure so that I can Feel confident in providing it for an online purchase
+  22. As an Online Shopper I want to be able to View my order confirmation after checkout so that I can Make sure I haven't made any mistakes
+  23. As an Online Shopper I want to be able to Receive an email confirmation after checkout so that I can See what I've purchased and keep a record
   ### Admin and Online Shop Management
-  21. As an Online Shop Owner I want to be able to Add a product so that I can add new items to my shop
-  22. As an Online Shop Owner I want to be able to Edit and update products so that I can Change the product descriptions, prices, images and criteria
+  24. As an Online Shop Owner I want to be able to Add a product so that I can add new items to my shop
+  25. As an Online Shop Owner I want to be able to Edit and update products so that I can Change the product descriptions, prices, images and criteria
+  26. As an Online User I want to be able to contact the admin department so that I can ask questions.
 
   ## Design
   ### Colour Scheme
@@ -200,7 +204,7 @@ To ensure that the project fulfils the goals set out in the user stories:
   <img src="screenshots/websiteimages/navbar.png">
 
 ### All Products
-  <img src="screenshots/websiteimages/product-dropdown.png">
+  <img src="screenshots/websiteimages/productdropdown1.png">
 
 ### Clothing
   <img src="screenshots/websiteimages/clothing-dropdown.png">
@@ -292,57 +296,89 @@ To ensure that the project fulfils the goals set out in the user stories:
 ### Product Results
 <img src="screenshots/websiteimages/results.png">
 
+15. As an Online User I want to be able to look and add tips about living a sustainable life so that I can learn about and help others to try and life sustainable lives
+     * The user can click on the life tips tab in the nav bar to look at sustainable life tips and also add tips to the site.
+### Life Tips
+<img src="screenshots/websiteimages/lifetips1.png">
+<img src="screenshots/websiteimages/lifetips2.png">
+<img src="screenshots/websiteimages/lifetips3.png">
+
+16. As an Online Shopper I want to be able to add items to a wishlist so that I can keep a record of the products I like
+     * The user can click on the wishlist button when viewing a product to add the item to their wishlist. They can also remove items and view the wishlist on their profile page.
+
+### Wishlist
+<img src="screenshots/websiteimages/wishlist1.png">
+<img src="screenshots/websiteimages/wishlist2.png">
+<img src="screenshots/websiteimages/wishlist3.png">
+
+17. As an Online Shopper I want to be able to add product reviews so that I can help other people to purchase good products and view product reviews so I can make informed choices.
+      * The user can add and view product reviews underneath each product. They can also see the star rating when they click on the individual products
+
+
+### Reviews
+<img src="screenshots/websiteimages/reviews1.png">
+<img src="screenshots/websiteimages/reviews2.png">
+<img src="screenshots/websiteimages/reviews3.png">
+<img src="screenshots/websiteimages/reviews4.png">
+
 ### Purchasing and Checkout
 
-15. As an Online Shopper I want to be able to be-able to select a size and/or quantity of product so that I can make sure I don't accidentally choose the wrong item, quantity or size
+18. As an Online Shopper I want to be able to be-able to select a size and/or quantity of product so that I can make sure I don't accidentally choose the wrong item, quantity or size
      * The user can select a size and/or quantity of product .
 ### Size/Qty
 <img src="screenshots/websiteimages/size.png">
 
-16. As an Online Shopper I want to be able to view my bag so that I can see the total cost and the items I will receive
+19. As an Online Shopper I want to be able to view my bag so that I can see the total cost and the items I will receive
      * The user can view their bag.
 ### Bag
 <img src="screenshots/websiteimages/bag.png">
 <img src="screenshots/websiteimages/bag-preview.png">
 
-17. As an Online Shopper I want to be able to change the quantity of items in my bag so that I can make changes to my purchase with ease
+20. As an Online Shopper I want to be able to change the quantity of items in my bag so that I can make changes to my purchase with ease
      * The user can change items in their bag.
 ### Update Bag
 <img src="screenshots/websiteimages/updatebag.png">
 
-18. As an Online Shopper I want to be able to Know that my payment info is safe and secure so that I can Feel confident in providing it for an online purchase
+21. As an Online Shopper I want to be able to Know that my payment info is safe and secure so that I can Feel confident in providing it for an online purchase
      * The user can use a safe and secure payment method with stripe.
 ### Secure Payment
 <img src="screenshots/websiteimages/secure.png">
 
-19. As an Online Shopper I want to be able to View my order confirmation after checkout so that I can Make sure I haven't made any mistakes
+22. As an Online Shopper I want to be able to View my order confirmation after checkout so that I can Make sure I haven't made any mistakes
      * The user can view their order confirmation.
 ### Order Confirmation
 <img src="screenshots/websiteimages/order-confirmation.png">
 
-20. As an Online Shopper I want to be able to Receive an email confirmation after checkout so that I can See what I've purchased and keep a record
+23. As an Online Shopper I want to be able to Receive an email confirmation after checkout so that I can See what I've purchased and keep a record
      * The user can recieve an email confirmation.
 ### Email Confirmation
 <img src="screenshots/websiteimages/email.png">
 
 ### Admin and Online Shop Management
 
-21. As an Online Shop Owner I want to be able to Add a product so that I can add new items to my shop
+24. As an Online Shop Owner I want to be able to Add a product so that I can add new items to my shop
      * The online shop owner can add products to their store.
 ### Product Management
 <img src="screenshots/websiteimages/product-management1.png">
 <img src="screenshots/websiteimages/product-management2.png">
 
-21. As an Online Shop Owner I want to be able to Edit and update products so that I can Change the product descriptions, prices, images and criteria
+25. As an Online Shop Owner I want to be able to Edit and update products so that I can Change the product descriptions, prices, images and criteria
      * The online shop owner can edit and update products in their store.
 ### Product Management
 <img src="screenshots/websiteimages/product-management3.png">
 
+26. As an Online User I want to be able to contact the admin department so that I can ask questions.
+     * The online user can contact the admin department by clicking on contact us at the bottom of the home page
+### Contact Us
+<img src="screenshots/websiteimages/contactus1.png">
+<img src="screenshots/websiteimages/contactus2.png">
+<img src="screenshots/websiteimages/contactus3.png">
+
 ## Search Engine Optimization and Web Marketing
 
-1. The website contains a footer on the Home page with a link to the shops facebook page, Useful links to other relevant sites being Friends of the earth and green peace. It also contains a link to the websites privacy policy and the ability to subscribe to newsletter marketing with mailchimp.
+1. The website contains a footer on the Home page with a link to the shops facebook page, Useful links to other relevant sites being Friends of the earth and green peace. It also contains a link to the websites privacy policy and the ability to subscribe to newsletter marketing with mailchimp. As well as an option to contact the Sites admin department.
 
-<img src="screenshots/websiteimages/footer.png">
+<img src="screenshots/websiteimages/footer1.png">
 
 2. The user can view the facebook business page by clicking "Follow us on Facebook" in the footer.
 
