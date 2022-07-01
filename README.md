@@ -157,8 +157,11 @@ This project is a fictional e-commerce Website for a sustainable food and clothi
 
       <img src="screenshots/order-model.png">
       <img src="screenshots/orderLineItem-model.png">
-      <img src="screenshots/product-model.png">
+      <img src="screenshots/websiteimages/productmodel.png">
       <img src="screenshots/profile-model.png">
+      <img src="screenshots/websiteimages/productreviewsmodel.png">
+      <img src="screenshots/websiteimages/lifetipsmodel.png">
+      <img src="screenshots/websiteimages/contactusmodel.png">
 
 # Testing
 
