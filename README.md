@@ -5,7 +5,7 @@
 
 This project is a fictional e-commerce Website for a sustainable food and clothing company. People looking for local, ethical and sustainable clothes or food products can view the site on all types of devices, where they can learn more and also order products and create a user account to check order history and update and save contact info. The site is fully responsive and accessible.
 
-[Here is the live version link to my project](https://sustainable2022.herokuapp.com/)
+[Here is the live version link to my project](https://sustainable-2022.onrender.com/)
 
 ## Menu
 
